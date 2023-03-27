@@ -137,6 +137,15 @@ declare module "react-native-image-crop-picker" {
          * @default true
          */
         writeTempFile?: boolean;
+
+        /**
+         * When set to true, will ask Android gallery picker to include only local files. 
+         * Files from cloud providers(e.g Google Photos, Drive) will not be included in the list
+         *
+         * @platform Android only
+         * @default false
+         */
+        localFilesOnly?: boolean;
     }
 
     type ImageOptions = CommonOptions & {
